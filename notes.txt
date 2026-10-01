@@ -1,0 +1,234 @@
+NOTE:
+    -You should not re-arrange the files/folder structure
+    -You should only add your code on the index.html and css file.
+
+COLOR CODE:
+    Navbar:
+        Background Color: #fff
+        Box Shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
+        Logo Color: #4F46E5
+        Link Color: #555
+        Link Hover Color: #4F46E5
+
+        "Get Started" Button:
+            Background Color: #4F46E5
+            Text Color: #fff
+            Hover Background Color: #4338CA
+
+    Hero Section:
+        Background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)
+        Text Color: #fff
+
+    Body Text:
+        Color: #333
+
+    Section Headings:
+        Color: #1F2937
+
+    Section Subtitles:
+        Color: #6B7280
+
+    Partners Section:
+        Background Color: #fff
+
+    Features Section:
+        Background Color: #F5F8FF
+
+        Feature Card:
+            Background Color: #fff
+            Border: 1px solid #E5E7EB
+
+        Feature Icon Box:
+            Background Color: #3B82F6
+
+        Feature Card Heading Color: #1F2937
+        Feature Card Text Color: #6B7280
+
+    Pricing Section:
+        Background Color: #fff
+
+        Pricing Card:
+            Background Color: #F9FAFB
+
+        Featured Pricing Card:
+            Background Color: #4F46E5
+            Text Color: #fff
+
+        Price Color: #4F46E5
+        Pricing Card Heading Color: #1F2937
+        Pricing Feature Text Color: #6B7280
+
+    "Get Started" Primary Button:
+        Background Color: #fff
+        Text Color: #4F46E5
+
+    "Get Started" Secondary Button:
+        Background Color: transparent
+        Text Color: #4F46E5
+        Border: 2px solid #4F46E5
+        Hover Background Color: #4F46E5
+        Hover Text Color: #fff
+
+    Demo Section:
+        Background Color: #F9FAFB
+
+        Demo Benefits Checkmark Color: #10B981
+        Demo Benefits Text Color: #374151
+
+        Form:
+            Background Color: #fff
+            Box Shadow: 0 4px 6px rgba(0, 0, 0, 0.05)
+            Input Border: 1px solid #D1D5DB
+            Input Focus Border Color: #4F46E5
+            Input Focus Box Shadow: 0 0 0 3px rgba(79, 70, 229, 0.1)
+            Label Color: #374151
+
+        Submit Button:
+            Background Color: #4F46E5
+            Text Color: #fff
+            Hover Background Color: #4338CA
+
+    Footer:
+        Background Color: #1F2937
+        Text Color: #fff
+        Brand Color: #4F46E5
+        Link Color: #9CA3AF
+        Link Hover Color: #fff
+        Copyright Color: #6B7280
+
+TEXT:
+    Title:
+        FlowSync - Simplify Your Workflow
+
+    Nav Menu:
+        Features
+        Pricing
+        Demo
+        Get Started
+
+    Hero Section:
+        Simplify Your Workflow
+        Streamline your team's productivity with our all-in-one platform. Less complexity, more results.
+        Request a Demo
+
+    Partners Section:
+        Our Trusted Partners
+        Powering productivity for industry leaders
+
+        Partner Logos (use provided images):
+            Spotify_Full_Logo_RGB_Green.png
+            SLA-Slack-from-Salesforce-logo.png
+            shopify_logo_black.png
+            notion-logo-no-background.png
+            Stripe wordmark - Blurple - Small.png
+
+    Features Section:
+        Powerful Features
+        Everything you need to boost your team's productivity
+
+        Card 1:
+            <i class="bi bi-graph-up"></i>
+            Increased Efficiency
+            Automate data extraction from contracts, reducing manual effort and speeding up the review process.
+
+        Card 2:
+            <i class="bi bi-cash-stack"></i>
+            Reduced Costs
+            Reduce operational costs and uncover missed opportunities through proactive workflow management.
+
+        Card 3:
+            <i class="bi bi-bullseye"></i>
+            Improved Accuracy
+            Minimize human errors by precisely identifying and extracting key data points and conditions.
+
+        Card 4:
+            <i class="bi bi-shield-check"></i>
+            Reinforced Compliance
+            Identify potential risks and compliance issues, facilitating timely management of obligations and deadlines.
+
+        Card 5:
+            <i class="bi bi-unlock"></i>
+            Enhanced Accessibility
+            Centralize all your data, simplifying search and access, and improving organizational transparency.
+
+        Card 6:
+            <i class="bi bi-lightbulb"></i>
+            Actionable Insights
+            Easily interpret aggregated data to augment decision-making process and optimize business relationships.
+
+    Pricing Section:
+        Simple Pricing
+        Choose the plan that fits your needs
+
+        Starter:
+            $9/month
+            Up to 5 users
+            Basic analytics
+            Email support
+            1GB storage
+            Get Started
+
+        Professional (Featured):
+            $29/month
+            Up to 25 users
+            Advanced analytics
+            Priority support
+            10GB storage
+            Get Started
+
+        Enterprise:
+            $99/month
+            Unlimited users
+            Custom analytics
+            24/7 phone support
+            Unlimited storage
+            Get Started
+
+    Demo Section:
+        Request a Demo
+        See how FlowSync can transform your workflow. Fill out the form and our team will get back to you within 24 hours.
+
+        Benefits:
+            Personalized product walkthrough
+            Custom solutions for your team
+            No commitment required
+
+        Form Fields:
+            Full Name (placeholder: John Doe)
+            Email Address (placeholder: john@company.com)
+            Company Name (placeholder: Your Company)
+            Message (placeholder: Tell us about your needs...)
+            Submit Request
+
+    Footer:
+        FlowSync
+        Simplifying workflows since 2024
+
+        Links:
+            Privacy Policy
+            Terms of Service
+            Contact Us
+
+        © 2024 FlowSync. All rights reserved.
+
+LAYOUT NOTES:
+    - Navbar: Flexbox row, logo left, links right
+    - Partners: Flexbox row, centered, wrapping
+    - Features: CSS Grid, 3 columns
+    - Pricing: Flexbox row, 3 cards, centered
+    - Demo: Flexbox row, content left, form right
+    - Footer: Centered text layout
+
+RESPONSIVE BREAKPOINTS:
+    Tablet (max-width: 991px):
+        - Hamburger menu replaces nav links
+        - Features grid becomes 2 columns
+        - Demo section stacks vertically
+        - Partner logos reduce in size
+
+    Mobile (max-width: 767px):
+        - Features grid becomes 1 column
+        - Pricing cards stack vertically
+        - Reduced section padding
+        - Smaller heading sizes
+        - Footer links stack vertically
