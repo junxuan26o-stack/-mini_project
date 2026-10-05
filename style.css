@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+
+}
+body{
+    background: linear-gradient(to bottom, #542829 0%, black 30%, black 100%);
+    background-attachment: fixed;
+}
+/* dashboard */
+.navbar{
+    color: #ebe3a7;
+    max-width: 100%;
+    display: flex;
+    padding: 1rem;
+
+}
+.nav{
+    text-align: end;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+/* Tracker */
+.tracker{
+    background: linear-gradient(to bottom, #3d211a 0%, #f4a259 40%, #f4a259 100%);
+    background-attachment: fixed;
+}
+.navbar-tracker{
+    color: #ebe3a7;
+    max-width: 100%;
+    display: flex;
+    padding: 1rem;
+
+}
+.nav-tracker{
+    text-align: end;
+}
+.nav-tracker ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+/* Budget */
+.budget{
+    background: linear-gradient(to bottom, rgb(163, 41, 41) 0%, black 30%, black 100%);
+    background-attachment: fixed;
+}
+.navbar-budget{
+    color: #ebe3a7;
+    max-width: 100%;
+    display: flex;
+    padding: 1rem;
+
+}
+.nav-budget{
+    text-align: end;
+}
+.nav-budget ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+/* categories */
+.categories{
+    background: linear-gradient(to bottom, #353535 0%, black 30%, black 100%);
+    background-attachment: fixed;
+}
+.navbar-categories{
+    color: #ebe3a7;
+    max-width: 100%;
+    display: flex;
+    padding: 1rem;
+
+}
+
+.nav-categories ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+/* title */
+.title{
+    color: #d2d4d3;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.big-title{
+    font-size: 45px;
+    padding-bottom: 0.5rem;
+}
+.sub-title{
+    font-size: 20px;
+}
+/* Card 1 */
+.card-1{
+    background-color: #3d211a;
+    color: #ebe3a7;
+    box-shadow: black;
+    padding: 1rem;
+    margin: 1rem;
+    
+    border-radius: 16px;
+}
+.icon-wallet{
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: #ffffff80;                        
+    border: 1px solid transparent;   
+    border-radius: 0.5rem;
+    width: 1rem;      
+    padding: 1rem;  
+}
+
