@@ -1,0 +1,168 @@
+/* ============ tracker.css ============
+   要和 categories.css 一起用(导航栏、弹窗、按钮都在 categories.css 里) */
+
+/* ---------- 三个数字卡片 ---------- */
+.tr-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 2rem 1rem;
+}
+
+.tr-card {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    border-radius: 16px;
+    padding: 1.2rem 1.5rem;
+}
+
+.tr-card small {
+    display: block;
+    opacity: 0.8;
+    font-size: 1.05rem;
+}
+
+.tr-card strong {
+    display: block;
+    font-size: 2rem;
+    margin-top: 0.3rem;
+}
+
+.tr-income  { color: #4ade80; }
+.tr-expense { color: #f87171; }
+
+/* ---------- 交易列表 ---------- */
+.tr-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem 2rem 3rem;
+}
+
+.tr-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    padding: 1rem 1.5rem;
+}
+
+.tr-info {
+    min-width: 0;
+}
+
+.tr-desc {
+    font-size: 1.25rem;
+    word-break: break-word;
+}
+
+.tr-meta {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-top: 0.2rem;
+}
+
+.tr-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.tr-amount {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.tr-empty {
+    text-align: center;
+    margin: 3rem 1rem;
+    opacity: 0.85;
+}
+
+/* ---------- 弹窗里的表单 ---------- */
+.cat-modal input[type="number"],
+.cat-modal input[type="date"],
+.cat-modal select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(235, 227, 167, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ebe3a7;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.cat-modal select option {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+}
+
+.cat-modal input[type="date"] {
+    color-scheme: dark;
+}
+
+/* Income / Expense 切换 */
+.tr-type {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.tr-type input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cat-modal .tr-type label {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: 1px solid rgba(235, 227, 167, 0.4);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#type-income:checked + label {
+    background-color: rgba(74, 222, 128, 0.2);
+    border-color: #4ade80;
+    color: #4ade80;
+}
+
+#type-expense:checked + label {
+    background-color: rgba(248, 113, 113, 0.2);
+    border-color: #f87171;
+    color: #f87171;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 900px) {
+    .tr-summary {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 1rem;
+    }
+    .tr-list {
+        padding: 1rem 1rem 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .tr-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tr-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .tr-card strong {
+        font-size: 1.7rem;
+    }
+}

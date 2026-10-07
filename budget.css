@@ -1,0 +1,209 @@
+/* ============ budget.css ============
+   要和 categories.css 一起用(导航栏、弹窗、按钮在 categories.css 里) */
+
+/* ---------- Monthly Budget Summary ---------- */
+.bd-summary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    border-radius: 16px;
+    margin: 0 2rem 1.5rem;
+    padding: 1.5rem;
+}
+
+.bd-summary-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+
+.bd-summary-top h2 {
+    font-size: 1.6rem;
+}
+
+.bd-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.bd-month {
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    border: 1px solid rgba(235, 227, 167, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ebe3a7;
+    font-size: 1rem;
+    font-family: inherit;
+    color-scheme: dark;
+}
+
+.bd-badge {
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.bd-under {
+    background-color: rgba(74, 222, 128, 0.2);
+    color: #4ade80;
+}
+
+.bd-over {
+    background-color: rgba(248, 113, 113, 0.2);
+    color: #f87171;
+}
+
+.bd-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.bd-stat {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+}
+
+.bd-stat small {
+    display: block;
+    opacity: 0.8;
+    font-size: 1.05rem;
+}
+
+.bd-stat strong {
+    display: block;
+    font-size: 1.7rem;
+    margin-top: 0.3rem;
+}
+
+.bd-red   { color: #f87171; }
+.bd-green { color: #4ade80; }
+
+/* ---------- 每个分类的预算 ---------- */
+.bd-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0 2rem 3rem;
+}
+
+.bd-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    border-radius: 14px;
+    padding: 1rem 1.5rem;
+}
+
+.bd-item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.bd-item-name {
+    font-size: 1.3rem;
+    word-break: break-word;
+}
+
+.bd-item-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.bd-item-nums {
+    font-size: 1.05rem;
+}
+
+.bd-bar {
+    height: 10px;
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+}
+
+.bd-bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background-color: #4ade80;
+}
+
+.bd-bar-fill.bd-bar-over {
+    background-color: red;
+}
+
+.bd-empty {
+    text-align: center;
+    margin: 3rem 1rem;
+    opacity: 0.85;
+}
+
+.bd-empty a {
+    text-decoration: underline;
+}
+
+/* ---------- 弹窗里的表单 ---------- */
+.cat-modal input[type="number"],
+.cat-modal select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(235, 227, 167, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ebe3a7;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.cat-modal select option {
+    background-color: #3d211a;
+    color: #ebe3a7;
+}
+
+.bd-hint {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    margin: -0.6rem 0 1.2rem;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 900px) {
+    .bd-summary {
+        margin: 0 1rem 1.5rem;
+        padding: 1.2rem;
+    }
+    .bd-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bd-list {
+        padding: 0 1rem 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .bd-stats {
+        grid-template-columns: 1fr;
+    }
+    .bd-item-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bd-item-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .bd-controls {
+        width: 100%;
+    }
+}
