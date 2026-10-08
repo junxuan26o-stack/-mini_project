@@ -1,0 +1,210 @@
+/* ============ roles.css ============
+   给 users.php 和 user_view.php 用,要和 categories.css 一起用 */
+
+/* ---------- 身份标签 ---------- */
+.rl-badge {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.rl-admin { background-color: rgba(244, 162, 89, 0.2); color: #f4a259; }
+.rl-agent { background-color: rgba(96, 165, 250, 0.2); color: #60a5fa; }
+.rl-user  { background-color: rgba(74, 222, 128, 0.2); color: #4ade80; }
+
+/* ---------- 提示信息 ---------- */
+.rl-flash {
+    margin: 0 2rem 1rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 12px;
+}
+
+.rl-flash-error {
+    background-color: rgba(248, 113, 113, 0.2);
+    color: #f87171;
+}
+
+.rl-flash-ok {
+    background-color: rgba(74, 222, 128, 0.2);
+    color: #4ade80;
+}
+
+.rl-note {
+    margin: 0 2rem 1rem;
+    padding: 0.9rem 1.2rem;
+    border-radius: 12px;
+    background-color: rgba(96, 165, 250, 0.15);
+    color: #93c5fd;
+}
+
+/* ---------- 用户列表 ---------- */
+.rl-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 0 2rem 3rem;
+}
+
+.rl-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #3d211a;
+    border-radius: 14px;
+    padding: 1rem 1.5rem;
+}
+
+.rl-who {
+    min-width: 0;
+}
+
+.rl-email {
+    font-size: 1.25rem;
+    word-break: break-all;
+    margin-bottom: 0.3rem;
+}
+
+.rl-meta {
+    font-size: 0.95rem;
+    opacity: 0.75;
+    margin-top: 0.3rem;
+}
+
+.rl-actions {
+    display: flex;
+    gap: 0.6rem;
+    flex-shrink: 0;
+}
+
+.rl-btn {
+    display: inline-block;
+    background: transparent;
+    color: #ebe3a7;
+    border: 1px solid #ebe3a7;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.rl-btn:hover {
+    background-color: rgba(235, 227, 167, 0.15);
+}
+
+/* ---------- 弹窗里的表单 ---------- */
+.cat-modal input[type="email"],
+.cat-modal input[type="password"],
+.cat-modal select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(235, 227, 167, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ebe3a7;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.cat-modal select option {
+    background-color: #3d211a;
+    color: #ebe3a7;
+}
+
+.rl-hint {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin: -0.8rem 0 1.2rem;
+}
+
+/* ---------- user_view 页面 ---------- */
+.rl-section {
+    padding: 0 2rem 1.5rem;
+}
+
+.rl-section h2 {
+    margin-bottom: 0.8rem;
+}
+
+.rl-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 2rem 1.5rem;
+}
+
+.rl-card {
+    background-color: #3d211a;
+    border-radius: 16px;
+    padding: 1.2rem 1.5rem;
+}
+
+.rl-card small {
+    display: block;
+    opacity: 0.8;
+    font-size: 1.05rem;
+}
+
+.rl-card strong {
+    display: block;
+    font-size: 1.9rem;
+    margin-top: 0.3rem;
+}
+
+.rl-green { color: #4ade80; }
+.rl-red   { color: #f87171; }
+
+.rl-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #3d211a;
+    border-radius: 12px;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.rl-item small {
+    display: block;
+    opacity: 0.7;
+}
+
+.rl-empty {
+    opacity: 0.7;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 900px) {
+    .rl-list    { padding: 0 1rem 3rem; }
+    .rl-flash,
+    .rl-note    { margin: 0 1rem 1rem; }
+    .rl-section { padding: 0 1rem 1.5rem; }
+    .rl-summary {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .rl-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rl-actions {
+        width: 100%;
+    }
+    .rl-actions .rl-btn,
+    .rl-actions form {
+        flex: 1;
+    }
+    .rl-actions form .rl-btn {
+        width: 100%;
+    }
+}

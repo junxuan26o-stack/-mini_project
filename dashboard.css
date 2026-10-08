@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+
+}
+body{
+   background: linear-gradient(to bottom, #353535 0%, black 30%, black 100%);
+    background-attachment: fixed;
+}
+
+
+/* dashboard */
+.logo {
+    position: absolute;
+    left: 2rem;
+}
+.navbar {
+    color: #fff8f8;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav a {
+    color: #fff8f8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+}
+a {
+    color: #fff8f8;
+    text-decoration: none;
+
+}
+.logout {
+    position: absolute;
+    right: 2rem;
+}
+
+
+/* Tracker */
+.tracker{
+    background: linear-gradient(to bottom, #353535 0%, black 30%, black 100%);
+    background-attachment: fixed;
+}
+.logo-tracker {
+    position: absolute;
+    left: 2rem;
+}
+.navbar-tracker {
+    color: #fff8f8;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+.nav-tracker ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    gap: 3rem;
+}
+.nav-tracker a {
+    color: #fff8f8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.2rem;
+}
+a {
+    color: #fff8f8;
+    text-decoration: none;
+
+}
+
+
+
+/* title */
+.title{
+    color: #d2d4d3;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.big-title{
+    font-size: 45px;
+    padding-bottom: 0.5rem;
+}
+.sub-title{
+    font-size: 20px;
+}
+
+#total-balance {
+    color: #fff8f8;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+/* Card 1 */
+.card-1{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    box-shadow: black;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.icon-wallet{
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: #ffffff80;                        
+    border: 1px solid transparent;   
+    border-radius: 0.5rem;
+    width: 1rem;      
+    padding: 1rem;  
+}
+
+
+/* Card 2 */
+.card-row {
+    display: flex;
+}
+.card-2{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    box-shadow: black;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 30rem;
+}
+.icon-arrow-up{
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: #ffffff80;                        
+    border: 1px solid transparent;   
+    border-radius: 0.5rem;
+    width: 1rem;      
+    padding: 1rem;  
+}
+
+
+/* Card 3 */
+.card-3{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    box-shadow: black;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 30rem;
+}
+.icon-arrow-down{
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: #ffffff80;                        
+    border: 1px solid transparent;   
+    border-radius: 0.5rem;
+    width: 1rem;      
+    padding: 1rem;  
+}
+
+/* Card 4 */
+.card-4{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    box-shadow: black;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 30rem;
+}
+.icon-dollar{
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: #ffffff80;                        
+    border: 1px solid transparent;   
+    border-radius: 0.5rem;
+    width: 1rem;      
+    padding: 1rem;  
+}
+
+/* Card 5 */
+.quick-actions {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff8f8;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.qa-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    color: #ebe3a7;
+    font-size: 1.1rem;
+}
+
+
+.qa-blue   { background-color: rgba(96, 165, 250, 0.15);  border-color: rgba(96, 165, 250, 0.3); }
+.qa-purple { background-color: rgba(192, 132, 252, 0.15); border-color: rgba(192, 132, 252, 0.3); }
+.qa-red    { background-color: rgba(248, 113, 113, 0.15); border-color: rgba(248, 113, 113, 0.3); }
